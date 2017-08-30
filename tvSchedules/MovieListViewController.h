@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MovieListViewController.h
 //  tvSchedules
 //
 //  Created by Tik on 30/8/17.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MovieListViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end
 

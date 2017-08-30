@@ -1,0 +1,22 @@
+//
+//  Header.pch
+//  tvSchedules
+//
+//  Created by Tik on 30/8/17.
+//  Copyright © 2017 tipayanond. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+// Configure Lumberjack for logging
+#define LOG_LEVEL_DEF ddLogLevel
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelError;
+#endif
+
+#endif /* Header_pch */

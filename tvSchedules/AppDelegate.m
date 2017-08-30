@@ -7,16 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "MovieListViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    MovieListViewController     *_movieListVC;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //Config logger
+    [DDLog removeAllLoggers];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    _movieListVC = [storyboard instantiateViewControllerWithIdentifier:@"MovieNavVC"];
+    application.delegate.window.rootViewController = _movieListVC;
+    
     return YES;
 }
 

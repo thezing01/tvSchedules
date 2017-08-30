@@ -1,0 +1,8 @@
+install! 'cocoapods', :deterministic_uuids => false
+
+platform :ios, 10.2
+
+target 'tvSchedules' do
+    pod 'CocoaLumberjack'
+    pod 'RestKit', '~> 0.26.0'
+end
