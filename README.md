@@ -6,3 +6,4 @@ The app will request AppSettings.showURL every time the table is scrolled to the
 
 To run in the iphone simulator (iOS 8+):
  > Run 'pod install' from the Terminal command-prompt.  This will install cocoalumberjack and restkit pods.
+ > Open tvSchedules.xcworkspace with XCode.
