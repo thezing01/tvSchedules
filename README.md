@@ -7,3 +7,5 @@ The app will request AppSettings.showURL every time the table is scrolled to the
 To run in the iphone simulator (iOS 8+):
  > Run 'pod install' from the Terminal command-prompt.  This will install cocoalumberjack and restkit pods.
  > Open tvSchedules.xcworkspace with XCode.
+
+The app will report 503 error code when service is unavailable. The app will re-fetch the TV programs from the server after the user taps OK on the error dialog box.
