@@ -1,5 +1,6 @@
 # tvSchedules
 
+XCode v8.3.3
 Input URL is located under config.plist. It is given without the parameter passed in.  eg. https://www.whatsbeef.net/wabz/guide.php?start=
 
 The app will request AppSettings.showURL every time the table is scrolled to the bottom of the list. The URL is automatically roster from start id 1 to 10(eg. https://www.whatsbeef.net/wabz/guide.php?start=10) .  The table is allowed 50 rows of TV programs before it is cleared and re-populated with the latest information.
